@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32355C502A05777C002B37D6 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32355C4F2A05777C002B37D6 /* Song.swift */; };
+		32355C532A057848002B37D6 /* SongManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32355C522A057848002B37D6 /* SongManager.swift */; };
 		32C6453C29C4AB57008C46CD /* APappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6453B29C4AB57008C46CD /* APappApp.swift */; };
 		32C6453E29C4AB57008C46CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6453D29C4AB57008C46CD /* ContentView.swift */; };
 		32C6454029C4AB59008C46CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6453F29C4AB59008C46CD /* Assets.xcassets */; };
 		32C6454329C4AB59008C46CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6454229C4AB59008C46CD /* Preview Assets.xcassets */; };
+		32D874792A03463B00B54587 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D874782A03463B00B54587 /* SongData.swift */; };
+		32D8747B2A0413FB00B54587 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8747A2A0413FB00B54587 /* Extensions.swift */; };
+		32D8747D2A04145500B54587 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8747C2A04145500B54587 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32355C4F2A05777C002B37D6 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		32355C522A057848002B37D6 /* SongManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongManager.swift; sourceTree = "<group>"; };
 		32C6453829C4AB57008C46CD /* APapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6453B29C4AB57008C46CD /* APappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APappApp.swift; sourceTree = "<group>"; };
 		32C6453D29C4AB57008C46CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32C6453F29C4AB59008C46CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C6454229C4AB59008C46CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32D874782A03463B00B54587 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
+		32D8747A2A0413FB00B54587 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		32D8747C2A04145500B54587 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +42,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32355C4A2A054A1B002B37D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32D874782A03463B00B54587 /* SongData.swift */,
+				32355C4F2A05777C002B37D6 /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32355C4B2A054A27002B37D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32C6453D29C4AB57008C46CD /* ContentView.swift */,
+				32D8747C2A04145500B54587 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32355C512A057825002B37D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32355C522A057848002B37D6 /* SongManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		32C6452F29C4AB57008C46CD = {
 			isa = PBXGroup;
 			children = (
+				32C6453B29C4AB57008C46CD /* APappApp.swift */,
 				32C6453A29C4AB57008C46CD /* APapp */,
 				32C6453929C4AB57008C46CD /* Products */,
 			);
@@ -51,9 +88,10 @@
 		32C6453A29C4AB57008C46CD /* APapp */ = {
 			isa = PBXGroup;
 			children = (
-				32C6453B29C4AB57008C46CD /* APappApp.swift */,
-				32C6453D29C4AB57008C46CD /* ContentView.swift */,
-				32C6453F29C4AB59008C46CD /* Assets.xcassets */,
+				32355C4A2A054A1B002B37D6 /* Model */,
+				32355C4B2A054A27002B37D6 /* View */,
+				32D8747A2A0413FB00B54587 /* Extensions.swift */,
+				32355C512A057825002B37D6 /* Controller */,
 				32C6454129C4AB59008C46CD /* Preview Content */,
 			);
 			path = APapp;
@@ -62,6 +100,7 @@
 		32C6454129C4AB59008C46CD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				32C6453F29C4AB59008C46CD /* Assets.xcassets */,
 				32C6454229C4AB59008C46CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32355C502A05777C002B37D6 /* Song.swift in Sources */,
 				32C6453E29C4AB57008C46CD /* ContentView.swift in Sources */,
+				32D8747D2A04145500B54587 /* DetailView.swift in Sources */,
+				32D874792A03463B00B54587 /* SongData.swift in Sources */,
 				32C6453C29C4AB57008C46CD /* APappApp.swift in Sources */,
+				32D8747B2A0413FB00B54587 /* Extensions.swift in Sources */,
+				32355C532A057848002B37D6 /* SongManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
